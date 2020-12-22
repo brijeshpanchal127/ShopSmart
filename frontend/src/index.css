@@ -30,7 +30,7 @@ body {
 }
 header {
   grid-area: header;
-  background-color: #000408;
+  background-color: #000000;
 }
 main {
   grid-area: main;
@@ -38,7 +38,7 @@ main {
 }
 footer {
   grid-area: footer;
-  background-color: #000408;
+  background-color: #000000;
   color: #ffffff;
 }
 /* Common */
@@ -52,9 +52,10 @@ h2 {
 }
 a {
   text-decoration: none;
+  color: #000000;
 }
 a:hover {
-  color: #e97c10;
+  color: #f0c040;
 }
 /* Header */
 header a {
@@ -87,7 +88,7 @@ img.medium {
 /* Card */
 .card {
   border: 0.1rem #c0c0c0 solid;
-  background-color: #f8f8f8;
+  background-color: #dbdada;
   border-radius: 0.5rem;
   margin: 1rem;
 }
@@ -104,4 +105,7 @@ img.medium {
 .rating span {
   color: #f0c040;
   margin: 0.1rem;
+}
+.rating span:last-child {
+  color: #000000;
 }
