@@ -11,6 +11,7 @@ body {
   font-family: Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #141313;
 }
 
 #root{
@@ -49,13 +50,17 @@ h1 {
 h2 {
   font-size: 1.6rem;
   padding: 1rem 0;
+  color: #ffffff;
+}
+h2:hover{
+  color:#B1AEAE
 }
 a {
   text-decoration: none;
-  color: #000000;
+  
 }
 a:hover {
-  color: #f0c040;
+  color: #B1AEAE;
 }
 
 ul {
@@ -78,11 +83,20 @@ button {
   cursor: pointer;
 }
 button:hover {
-  border: 0.1rem #404040 solid;
+  border: 0.1rem #B1AEAE solid;
+
+  
 }
 button.primary {
-  background-color: #f0c040;
+  background-color: #ffffff;
+ 
 }
+button.primary:hover{
+  background:#B1AEAE
+
+}
+
+
 button.block {
   width: 100%;
 }
@@ -101,6 +115,7 @@ a.brand {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  color:#ffffff
 }
 .row.center {
   justify-content: center;
@@ -133,9 +148,10 @@ img.large {
 /* Card */
 .card {
   border: 0.1rem #c0c0c0 solid;
-  background-color: #dbdada;
+  background-color: #141313;
   border-radius: 0.5rem;
   margin: 1rem;
+  
 }
 .card-body {
   padding: 1rem;
@@ -175,4 +191,9 @@ img.large {
 .alert-danger {
   color: #a02020;
   background-color: #ffe0e0;
+}
+/* Link */
+
+.link{
+  color: #ffffff;
 }
