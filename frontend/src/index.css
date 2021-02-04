@@ -54,14 +54,14 @@ h2 {
   color: #ffffff;
 }
 h2:hover{
-  color:#B1AEAE
+  color:#E8DA0E
 }
 a {
   text-decoration: none;
   
 }
 a:hover {
-  color: #B1AEAE;
+  color: #E8DA0E;
 }
 
 ul {
@@ -92,7 +92,7 @@ button{
 input,
 select,
 textarea,button:hover {
-  border: 0.1rem #B1AEAE solid;
+  border: 0.1rem #E8DA0E solid;
 
   
 }
@@ -101,7 +101,7 @@ button.primary {
  
 }
 button.primary:hover{
-  background:#B1AEAE
+  background:#E8DA0E
 
 }
 
@@ -266,3 +266,15 @@ label{
   display: block;
 }
 
+/* Checkout Steps */
+.checkout-steps > div {
+  border-top: 0.3rem #c0c0c0 solid;
+  color: #c0c0c0;
+  flex: 1;
+  padding: 1rem;
+  font-weight: bold;
+}
+.checkout-steps > div.active {
+  border-top-color: #E8DA0E;
+  color: #E8DA0E;
+}
