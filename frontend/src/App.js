@@ -6,6 +6,7 @@ import HomeScreen from './screens/HomeScreen';
 import ProductScreen from './screens/ProductScreen';
 import CartScreen from './screens/CartScreen';
 import SigninScreen from './screens/SigninScreen';
+import RegisterScreen from './screens/RegisterScreen';
 
 function App() {
   const cart = useSelector((state) => state.cart);
@@ -33,6 +34,8 @@ function App() {
               )}
             </Link>
 
+            {/* to get name of user  in navbar instead of signin*/}
+
             {userInfo ? (
               <div className="dropdown">
                 <Link to="#">
@@ -55,6 +58,7 @@ function App() {
         <Route path="/cart/:id?" component={CartScreen}></Route>
         <Route path="/product/:id" component={ProductScreen}></Route>
         <Route path="/signin" component={SigninScreen}></Route>
+        <Route path="/register" component={RegisterScreen}></Route>
         <Route path="/" component={HomeScreen} exact></Route>
           
         </main>

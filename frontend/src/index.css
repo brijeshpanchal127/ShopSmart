@@ -198,6 +198,9 @@ img.large {
 
 
 /* Alert */
+.loading {
+  display: block;
+}
 .success {
   color: #20a020;
 }
