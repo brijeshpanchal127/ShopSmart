@@ -200,6 +200,7 @@ img.large {
 /* Alert */
 .loading {
   display: block;
+  color:#ffffff
 }
 .success {
   color: #20a020;
