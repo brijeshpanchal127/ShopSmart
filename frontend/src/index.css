@@ -109,6 +109,12 @@ button.primary:hover{
 button.block {
   width: 100%;
 }
+
+button.small {
+  font-size: 1.2rem;
+}
+
+
 /* Header */
 header a {
   color: #ffffff;
@@ -283,4 +289,23 @@ label{
 .checkout-steps > div.active {
   border-top-color: #E8DA0E;
   color: #E8DA0E;
+}
+
+/* Table */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.table tbody tr:nth-of-type(odd) {
+  background-color: #000000;
+}
+.table td,
+.table th {
+  text-align: left;
+  border: 0.1rem solid #e4e4e4;
+  padding: 0.5rem;
+  color: #ffffff;
+}
+.table button {
+  margin: 0 0.2rem;
 }
