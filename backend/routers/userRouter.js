@@ -9,7 +9,7 @@ const userRouter = express.Router();
 
 userRouter.get(
   '/seed',
-//   to avoid loading
+  //   to avoid loading
   expressAsyncHandler(async (req, res) => {
     // await User.remove({});
     const createdUsers = await User.insertMany(data.users);
@@ -114,7 +114,7 @@ userRouter.delete(
   expressAsyncHandler(async (req, res) => {
     const user = await User.findById(req.params.id);
     if (user) {
-      if (user.email === 'admin@example.com') {
+      if (user.email === 'brijeshpanchal127@gmail.com') {
         res.status(400).send({ message: 'Can Not Delete Admin User' });
         return;
       }

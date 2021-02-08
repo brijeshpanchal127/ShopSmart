@@ -40,7 +40,7 @@ function App() {
             <Link className="brand" to="/">ShopSmart</Link>
           </div>
           <div>
-          <Link to="/cart">
+            <Link to="/cart">
               Cart
               {cartItems.length > 0 && (
                 <span className="badge">{cartItems.length}</span>
@@ -55,10 +55,10 @@ function App() {
                   {userInfo.name} <i className="fa fa-caret-down"></i>{' '}
                 </Link>
                 <ul className="dropdown-content">
-                <li>
+                  <li>
                     <Link to="/profile">My Profile</Link>
                   </li>
-                <li>
+                  <li>
                     <Link to="/orderhistory">Order History</Link>
                   </li>
                   <li>
@@ -69,9 +69,9 @@ function App() {
                 </ul>
               </div>
             ) : (
-              <Link to="/signin">Sign In</Link>
-            )}
-              {userInfo && userInfo.isAdmin && (
+                <Link to="/signin">Sign In</Link>
+              )}
+            {userInfo && userInfo.isAdmin && (
               <div className="dropdown">
                 <Link to="#admin">
                   Admin <i className="fa fa-caret-down"></i>
@@ -95,26 +95,26 @@ function App() {
           </div>
         </header>
         <main>
-        <Route path="/cart/:id?" component={CartScreen}></Route>
-        <Route path="/product/:id" component={ProductScreen} exact></Route>
-        <Route
+          <Route path="/cart/:id?" component={CartScreen}></Route>
+          <Route path="/product/:id" component={ProductScreen} exact></Route>
+          <Route
             path="/product/:id/edit"
             component={ProductEditScreen}
             exact
           ></Route>
-        <Route path="/signin" component={SigninScreen}></Route>
-        <Route path="/register" component={RegisterScreen}></Route>
-        <Route path="/" component={HomeScreen} exact></Route>
-        <Route path="/shipping" component={ShippingAddressScreen}></Route>
-        <Route path="/payment" component={PaymentMethodScreen}></Route>
-        <Route path="/placeorder" component={PlaceOrderScreen}></Route>
-        <Route path="/order/:id" component={OrderScreen}></Route>
-        <Route path="/orderhistory" component={OrderHistoryScreen}></Route>
-        <PrivateRoute
+          <Route path="/signin" component={SigninScreen}></Route>
+          <Route path="/register" component={RegisterScreen}></Route>
+          <Route path="/" component={HomeScreen} exact></Route>
+          <Route path="/shipping" component={ShippingAddressScreen}></Route>
+          <Route path="/payment" component={PaymentMethodScreen}></Route>
+          <Route path="/placeorder" component={PlaceOrderScreen}></Route>
+          <Route path="/order/:id" component={OrderScreen}></Route>
+          <Route path="/orderhistory" component={OrderHistoryScreen}></Route>
+          <PrivateRoute
             path="/profile"
             component={ProfileScreen}
           ></PrivateRoute>
-           <AdminRoute
+          <AdminRoute
             path="/productlist"
             component={ProductListScreen}
           ></AdminRoute>
@@ -127,8 +127,8 @@ function App() {
             path="/user/:id/edit"
             component={UserEditScreen}
           ></AdminRoute>
-      
-          
+
+
         </main>
         <footer className="row center">All right reserved</footer>
       </div>

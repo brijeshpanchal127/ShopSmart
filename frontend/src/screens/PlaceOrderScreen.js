@@ -1,5 +1,5 @@
-import React, { useEffect }from 'react';
-import { useDispatch,useSelector } from 'react-redux';
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { createOrder } from '../actions/orderActions';
 import CheckoutSteps from '../components/CheckoutSteps';
@@ -19,7 +19,7 @@ export default function PlaceOrderScreen(props) {
   const toPrice = (num) => Number(num.toFixed(2)); // 5.123 => "5.12" => 5.12 will get 2 digit price
 
   cart.itemsPrice = toPrice(
-    cart.cartItems.reduce((a, c) => a + c.qty * c.price, 0) 
+    cart.cartItems.reduce((a, c) => a + c.qty * c.price, 0)
     // to get sum of accumulator
   );
   cart.shippingPrice = cart.itemsPrice > 100 ? toPrice(0) : toPrice(10);
