@@ -1,10 +1,10 @@
 import { createStore, compose, applyMiddleware, combineReducers } from 'redux';
 import thunk from 'redux-thunk';
 // import data from './data';
-import { productListReducer, productDetailsReducer } from './reducers/productReducers';
+import { productListReducer, productDetailsReducer, productCreateReducer,productUpdateReducer,productDeleteReducer, } from './reducers/productReducers';
 import { cartReducer } from './reducers/cartReducers';
 import { userRegisterReducer, userSigninReducer,   userDetailsReducer, userUpdateProfileReducer, } from './reducers/userReducers';
-import { orderCreateReducer, orderDetailsReducer,   orderPayReducer,  orderMineListReducer, } from './reducers/orderReducers';
+import { orderCreateReducer, orderDetailsReducer,   orderPayReducer,  orderMineListReducer, orderListReducer,  orderDeleteReducer, orderDeliverReducer,} from './reducers/orderReducers';
 
 const initialState = {
   userSignin: {
@@ -39,6 +39,13 @@ const reducer = combineReducers({
   orderMineList: orderMineListReducer,
   userDetails: userDetailsReducer,
   userUpdateProfile: userUpdateProfileReducer,
+  productCreate: productCreateReducer,
+  productUpdate: productUpdateReducer,
+  productDelete: productDeleteReducer,
+  orderList: orderListReducer,
+  orderDelete: orderDeleteReducer,
+  orderDeliver: orderDeliverReducer,
+
 });
 
 
